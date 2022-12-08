@@ -12,7 +12,7 @@ const ToDo = () => {
             isComplete: false
         }
         //POST task to database
-        fetch('https://infinite-ravine-57327.herokuapp.com/tasks', {
+        fetch('https://todo-server.up.railway.app/tasks', {
             method: 'POST',
             headers: {
                 'Content-Type': 'application/json'

@@ -3,7 +3,7 @@ import { useEffect, useState } from "react";
 const useTask = () => {
   const [task, setTask] = useState([]);
   useEffect(() => {
-    fetch('https://infinite-ravine-57327.herokuapp.com/tasks')
+    fetch('https://todo-server.up.railway.app/tasks')
       .then(res => res.json())
       .then(data => {
         setTask(data);

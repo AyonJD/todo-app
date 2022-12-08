@@ -78,7 +78,7 @@ const EditableTable = ({ columns, rows, actions }) => {
         //Delete row from database
         // if (window.confirm('Are you sure you want to delete this row?')) {
 
-        fetch(`https://infinite-ravine-57327.herokuapp.com/tasks/${rowID}`, {
+        fetch(`https://todo-server.up.railway.app/tasks/${rowID}`, {
             method: 'DELETE',
             headers: {
                 'Content-Type': 'application/json'
@@ -133,7 +133,7 @@ const EditableTable = ({ columns, rows, actions }) => {
 
             //PUT newData to API
 
-            fetch(`https://infinite-ravine-57327.herokuapp.com/tasks/${editedRow.id}`, {
+            fetch(`https://todo-server.up.railway.app/tasks/${editedRow.id}`, {
                 method: 'PUT',
                 headers: {
                     'Content-Type': 'application/json'
